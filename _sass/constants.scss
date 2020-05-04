@@ -1,0 +1,22 @@
+$FONT-SANS: 'Arial', sans-serif;
+$FONT-SERIF: 'Times';
+
+$TEXT-SIZE: 12px;
+
+$BACKGROUND-COLOR: #fff;
+$TEXT-COLOR: #222;
+$LIST-INDEX-COLOR: #0ff;
+
+$LINK-COLOR: $TEXT-COLOR;
+$LINK-COLOR-VISITED: $LINK-COLOR;
+$LINK-COLOR-HOVER: $LINK-COLOR;
+
+$DESKTOP-MIN-WIDTH: 800px;
+
+$TRANSITION-PERIOD: 0.1s;
+
+@mixin media-query($canvas) {
+  @if $canvas == DESKTOP {
+   @media only screen and (min-width: $DESKTOP-MIN-WIDTH) { @content; }
+  }
+}

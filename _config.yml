@@ -1,0 +1,43 @@
+# Site
+title: 'assosse.ga'
+subtitle: ''
+
+# URL
+url: https://assosse.ga
+baseurl: ''
+include: ['_pages']
+exclude: ['python']
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+
+# Build settings
+markdown: kramdown
+port: 9966
+future: false
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "home"
+
+# Data
+social:
+  facebook: "https://www.facebook.com/user"
+  instagram: "https://www.instagram.com/user"
+  github: "https://github.com/"
+  twitter: "https://twitter.com/user"
+  youtube: ""
+  vimeo: ""
+  soundcloud: ""
+  tumblr: ""
+  pinterest: ""
+  envelope-o: "mailto:maial@assosse.ga"
+
