@@ -7,12 +7,15 @@ layout: none
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
 }
 
 body {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  height: 100%;
   background-color: $BACKGROUND-COLOR;
 
   font: bold $TEXT-SIZE $FONT-SANS;
@@ -48,15 +51,44 @@ a {
   }
 }
 
-.backround-image {
-  display: block;
-  width: 100vw;
-  height: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-  background-color: $BACKGROUND-COLOR;
+svg {
+  width: 100%;
+  height: 100%; 
+}
 
-  @include media-query(DESKTOP) {
-    height: 100vh;
-  }
+.calendar-svg {
+  position: relative;
+  pointer-events: all;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.clickButton {
+  pointer-events: all;
+  cursor: pointer;
+  stroke: #00000000 !important;
+}
+
+.center-text-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
+  pointer-events: none;
+}
+
+.center-text {
+  max-width: 25%;
+  padding: 4px 12px;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  mix-blend-mode: difference;
 }
