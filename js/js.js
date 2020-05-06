@@ -2,19 +2,24 @@
 layout: none
 ---
 
-let mButton;
-function makeButtonClickAgain() {
-  console.log('from MBCA');
+let allButtons;
 
-  const allButtons = document.getElementsByClassName('clickButton');
+function buttonMouseover() {
+  document.getElementById('my-center-text').innerHTML = this.getAttribute('data-text');
+}
+
+function makeButtonClickAgain() {
+  allButtons = document.getElementsByClassName('clickButton');
+
   for(let i = 0; i < allButtons.length; i++) {
     allButtons[i].addEventListener('mousedown', function() {
-      console.log(this.getAttribute('data-text'));
+      for(let j = 0; j < allButtons.length; j++) {
+        allButtons[j].removeEventListener('mouseover', buttonMouseover);
+      }
+      document.getElementById('my-calendar-svg').classList.add('calendar-svg-hide');
     }, false);
 
-    allButtons[i].addEventListener('mouseover', function() {
-      document.getElementById('my-center-text').innerHTML = this.getAttribute('data-text');
-    }, false);
+    allButtons[i].addEventListener('mouseover', buttonMouseover, false);
   }
 }
 

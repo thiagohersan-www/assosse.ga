@@ -59,7 +59,23 @@ svg {
 .calendar-svg {
   position: relative;
   pointer-events: all;
-  background-color: #fff;
+  background-color: $BACKGROUND-COLOR;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 2s linear, opacity 1.5s linear .5s;
+}
+
+.calendar-svg-hide {
+  opacity: 0;
+  transform: scale(5);
+}
+
+.calendar-svg {
+  position: relative;
+  pointer-events: all;
+  background-color: $BACKGROUND-COLOR;
   width: 100%;
   height: 100%;
 }
@@ -89,6 +105,6 @@ svg {
   padding: 4px 12px;
   font-size: 32px;
   text-align: center;
-  color: #fff;
+  color: invert($TEXT-COLOR, 100%);
   mix-blend-mode: difference;
 }
