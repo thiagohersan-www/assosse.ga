@@ -11,7 +11,7 @@ exclude: ['python']
 collections:
   pages:
     output: true
-    permalink: /:name
+    permalink: /:name/
 
 
 # Build settings
@@ -26,7 +26,7 @@ defaults:
       path: "_pages"
       type: "pages"
     values:
-      layout: "home"
+      layout: "breath"
 
 # Data
 social:

@@ -9,6 +9,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
   background-color: $BACKGROUND-COLOR;
 
   font: bold $TEXT-SIZE $FONT-SANS;
@@ -101,10 +103,133 @@ svg {
 }
 
 .center-text {
-  max-width: 25%;
+  max-width: 90%;
   padding: 4px 12px;
+  box-sizing: border-box;
   font-size: 32px;
   text-align: center;
   color: invert($TEXT-COLOR, 100%);
   mix-blend-mode: difference;
+
+  @include media-query(DESKTOP) {
+    max-width: 25%;
+  }
+}
+
+.breath-info-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s linear;
+}
+
+.breath-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 36px;
+  padding-bottom: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: $BACKGROUND-COLOR;
+
+  @include media-query(DESKTOP) {
+    border: 36px solid $BACKGROUND-COLOR;
+    border-bottom: 48px solid $BACKGROUND-COLOR;;
+    border-top: 48px solid $BACKGROUND-COLOR;;
+  }
+}
+
+.breath-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+
+  @include media-query(DESKTOP) {
+    flex-direction: row;
+  }
+
+  .breath-title {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @include media-query(DESKTOP) {
+      width: 200px;
+    }
+  }
+
+  .breath-infos{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 20px;
+
+    @include media-query(DESKTOP) {
+      font-size: 14px;
+      margin-top: 0;
+    }
+
+    .breath-info-item {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      box-sizing: border-box;
+      width: 100%;
+      line-height: 2;
+
+      @include media-query(DESKTOP) {
+        flex-direction: row;
+        line-height: 1.5;
+      }
+
+      .breath-info-header {
+        width: 47%;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 6%;
+        text-align: left;
+        text-transform: uppercase;
+
+        @include media-query(DESKTOP) {
+          width: 33%;
+          max-width: 200px;
+          margin-left: 20px;
+          margin-right: 0;
+          text-align: right;
+        }
+      }
+
+      .breath-info-content {
+        width: 47%;
+        box-sizing: border-box;
+        text-align: left;
+
+        @include media-query(DESKTOP) {
+          width: 66%;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.breath-image {
+  width: 100%;
+  flex-grow: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

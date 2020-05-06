@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% include meta.html %}
+  </head>
+  <body>
+    <div id="my-breath-info-wrapper" class="breath-info-wrapper" style="opacity: 0;">
+      <div class="breath-info">
+        <div class="breath-header">
+          <div class="breath-title">{{ page.title }}</div>
+          <div class="breath-infos">
+            {% for info in page.infos %}
+              {% for item in info %}
+                <div class="breath-info-item">
+                  <div class="breath-info-content">{{ item[1] }}</div>
+                  <div class="breath-info-header">{{ item[0] }}</div>
+                </div>
+              {% endfor %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="breath-image"
+             style="background-image: url({{ site.baseurl }}{{ page.image }});"></div>
+      </div>
+    </div>
+  </body>
+  <script async src="{{ site.baseurl }}/js/breath.js"></script>
+</html>

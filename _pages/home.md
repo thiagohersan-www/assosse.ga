@@ -1,5 +1,5 @@
 ---
+layout: home
 title: assosse.ga
 permalink: /
-unlist: true
 ---
