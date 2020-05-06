@@ -22,12 +22,15 @@
         </div>
         <div class="breath-images-wrapper">
           {% assign images = site.static_files | where_exp:"file", "file.name contains page.images" %}
+
           {% if images.size > 3 %}
-            {% assign manySteps = "breath-image-container-many" %}
+            {% assign containerClasses = "breath-image-container breath-image-container-many" %}
+          {% else %}
+            {% assign containerClasses = "breath-image-container" %}
           {% endif %}
 
           {% for i in images %}
-            <div class="breath-image-container {{ manySteps }}">
+            <div class="{{ containerClasses }}">
               <div class="breath-image-image" style="background-image: url({{ site.baseurl }}{{ i.path }});"></div>
               <div class="breath-image-text">
                 {% if page.descriptions %}
