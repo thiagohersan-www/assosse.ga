@@ -20,8 +20,25 @@
             {% endfor %}
           </div>
         </div>
-        <div class="breath-image"
-             style="background-image: url({{ site.baseurl }}{{ page.image }});"></div>
+        <div class="breath-images-wrapper">
+          {% assign images = site.static_files | where_exp:"file", "file.name contains page.images" %}
+          {% if images.size > 3 %}
+            {% assign manySteps = "breath-image-container-many" %}
+          {% endif %}
+
+          {% for i in images %}
+            <div class="breath-image-container {{ manySteps }}">
+              <div class="breath-image-image" style="background-image: url({{ site.baseurl }}{{ i.path }});"></div>
+              <div class="breath-image-text">
+                {% if page.descriptions %}
+                  {% unless forloop.index > page.descriptions.size %}
+                    {{ forloop.index }}. {{ page.descriptions[forloop.index0] }}
+                  {% endunless %}
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </body>
