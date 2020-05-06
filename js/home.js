@@ -24,7 +24,8 @@ function slugify(str) {
   }
 
   str = str.replace(/[^a-z0-9 -]/g, '')
-    .replace(/\s+/g, '-').replace(/-+/g, '-');
+    .replace(/\s+/g, '-').replace(/-+/g, '-')
+    .replace(/^-+/, '').replace(/-+$/, '');
 
   return str;
 }
