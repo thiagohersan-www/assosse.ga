@@ -8,5 +8,5 @@ infos:
   - 'Intensidade': 'Lenta e profunda'
   - 'Postura': 'Sentada confortavelmente, olhos fechados'
   - 'Beneficios': 'Força, vitalidade e termorregulação corporal<br>Ajuda com febre, náusea, desconforto e equilíbrio hormonal'
-  - 'Contraindicaçoes': 'Não fazer mais de 10 minutos; parar se tiver mareos'
+  - 'Contraindicaçoes': 'Não fazer por mais de 10 minutos; parar em caso de tontura'
 ---

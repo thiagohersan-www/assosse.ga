@@ -9,5 +9,5 @@ infos:
   - 'Intensidade': 'Forte e profunda'
   - 'Postura': 'Em pé, em frente à outra pessoa'
   - 'Beneficios': 'Fortalece o pulmão e a musculatora do tórax; fortalece os vínculos interpessoais<br>Diversão e tranquilidade'
-  - 'Contraindicaçoes': 'Parar caso sinta algum desconforto físico ou emocional'
+  - 'Contraindicaçoes': 'Parar em caso de desconforto físico ou emocional'
 ---

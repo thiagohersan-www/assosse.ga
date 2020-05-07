@@ -9,5 +9,5 @@ infos:
   - 'Intensidade': 'Pronfunda e renovadora'
   - 'Postura': 'Sentada confortavelmente, olhos fechados, mão direita no rosto'
   - 'Beneficios': 'Ativa o corpo e dá energia'
-  - 'Contraindicaçoes': 'Hispertensão, vertigem, transtornos cardíacos'
+  - 'Contraindicaçoes': 'Não recomendado para pessoas com hispertensão, vertigem ou transtornos cardíacos'
 ---

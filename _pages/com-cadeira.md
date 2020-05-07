@@ -13,5 +13,5 @@ infos:
   - 'Intensidade': 'Lenta e profunda'
   - 'Postura': 'Sentada em uma cadeira; atenção na coluna'
   - 'Beneficios': 'Concentração, memoria e fortalecimento da coluna'
-  - 'Contraindicaçoes': 'Caso sinta algum desconforto físico ou emocional'
+  - 'Contraindicaçoes': 'Parar em caso de desconforto físico ou emocional'
 ---

@@ -8,5 +8,5 @@ infos:
   - 'Intensidade': 'Profunda'
   - 'Postura': 'Sentada ou em pé'
   - 'Beneficios': 'Controle emocional e relaxamento<br>Percepção, conexão consigo e com o entorno'
-  - 'Contraindicaçoes': 'Parar caso sinta algum desconforto físico ou emocional'
+  - 'Contraindicaçoes': 'Parar em caso de desconforto físico ou emocional'
 ---

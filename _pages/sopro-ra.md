@@ -9,5 +9,5 @@ infos:
   - 'Intensidade': 'Forte e renovadora'
   - 'Postura': 'Sentada ou em pé'
   - 'Beneficios': 'Aquecimento, oxigenação do corpo, ativação do corpo e energizante'
-  - 'Contraindicaçoes': 'Caso sinta algum desconforto físico ou emocional'
+  - 'Contraindicaçoes': 'Parar em caso de desconforto físico ou emocional'
 ---

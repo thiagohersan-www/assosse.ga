@@ -9,5 +9,5 @@ infos:
   - 'Intensidade': 'Rápida e forte'
   - 'Postura': 'Sentada, mãos sobre os joelhos, olhos fechados'
   - 'Beneficios': 'Fortalece imunidade e combate infecções'
-  - 'Contraindicaçoes': 'Gravidez, hipertensão; caso sinta algum desconforto físico ou emocional'
+  - 'Contraindicaçoes': 'Não recomendado para gestantes e pessoas com hipertensão'
 ---

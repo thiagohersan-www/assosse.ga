@@ -8,5 +8,5 @@ infos:
   - 'Intensidade': 'Forte'
   - 'Postura': 'Em pé, postura ativa, com algum espaço para movimentar-se'
   - 'Beneficios': 'Exercício físico, concentração, integração, diversão, coordenação'
-  - 'Contraindicaçoes': 'Parar caso sinta algum desconforto físico ou emocional'
+  - 'Contraindicaçoes': 'Parar em caso de desconforto físico ou emocional'
 ---
