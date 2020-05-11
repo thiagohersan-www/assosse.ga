@@ -35,7 +35,7 @@
               <div class="breath-image-text">
                 {% if page.descriptions %}
                   {% unless forloop.index > page.descriptions.size %}
-                    {{ forloop.index }}. {{ page.descriptions[forloop.index0] }}
+                    {{ page.descriptions[forloop.index0] }}
                   {% endunless %}
                 {% endif %}
               </div>
