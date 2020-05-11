@@ -12,6 +12,10 @@ function buttonMouseout() {
   document.getElementById('my-center-text').innerHTML = '';
 }
 
+function fadeIn() {
+  document.getElementById('my-calendar-svg').style.opacity = "1";
+}
+
 function slugify(str) {
   str = str.replace(/^\s+|\s+$/g, '');
   str = str.toLowerCase();
@@ -41,6 +45,7 @@ function makeButtonClickAgain() {
       }
 
       document.getElementById('my-calendar-svg').classList.add('calendar-svg-hide');
+      document.getElementById('my-calendar-svg').style.opacity = "0";
 
       setTimeout(function() {
         window.location.href = '{{ site.baseurl }}/' + slugify(this.getAttribute('data-text')) + '/';
@@ -55,4 +60,5 @@ function makeButtonClickAgain() {
 
 window.onload = function() {
   makeButtonClickAgain();
+  fadeIn();
 }
